@@ -5,8 +5,8 @@ title: Duckduckgo Images Downloader
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "This library provides utilities to download images using duckduckgo images search."
-description: "This library provides utilities to download images using duckduckgo images search."
+summary: "This package provides functions to download images using duckduckgo images search."
+description: "This package provides functions to download images using duckduckgo images search."
 ---
 <!--
 
@@ -29,24 +29,27 @@ description: "This library provides utilities to download images using duckduckg
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
+<h2 id="Installation">Installation<a class="anchor-link" href="#Installation"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install ddg_images_downloader</code></p>
+<p><code>pip install git+https://github.com/butchland/ddg_images_downloader.git</code></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Install-chromium-and-chromedriver">Install chromium and chromedriver<a class="anchor-link" href="#Install-chromium-and-chromedriver"> </a></h4><blockquote><p>If on linux, you can install chromium and chrome driver using the <code>apt</code> tool.</p>
+<h4 id="Install-chromium-and-chromedriver">Install chromium and chromedriver<a class="anchor-link" href="#Install-chromium-and-chromedriver"> </a></h4><blockquote><p>In order to run the package, you need to install chromium and chromedriver
+If you are running on linux, you can install chromium and chrome driver using the <code>apt</code> tool.</p>
 
 <pre><code>!apt-get update
-!apt install chromium-chromedriver
-!cp /usr/lib/chromium-browser/chromedriver /usr/bin</code></pre>
+!apt install chromium-chromedriver</code></pre>
+<p>If on other OS (Mac or Windows), please see instructions on setting up chrome driver with Selenium on 
+your platform.
+See <a href="https://chromedriver.chromium.org/getting-started">Chrome Driver Getting Started</a> for details.</p>
 </blockquote>
 
 </div>
@@ -86,11 +89,18 @@ description: "This library provides utilities to download images using duckduckg
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Create-text-files">Create text files<a class="anchor-link" href="#Create-text-files"> </a></h3>
-<pre><code>download_search_urls(path, search_term, search_pattern, **kwargs)</code></pre>
-<blockquote><p>Each textfile containing the list of urls for each search term</p>
+<h3 id="Download-image-urls-and-save-to-text-files">Download image urls and save to text files<a class="anchor-link" href="#Download-image-urls-and-save-to-text-files"> </a></h3><blockquote><p>This function will download the image urls and save them into textfiles</p>
+
+<pre><code>download_search_urls(path, search_terms, search_pattern, **kwargs)</code></pre>
+<p>Each textfile contains the list of urls for each search term and are named after the search term</p>
 </blockquote>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="An-example">An example<a class="anchor-link" href="#An-example"> </a></h4>
 </div>
 </div>
 </div>
@@ -153,7 +163,6 @@ description: "This library provides utilities to download images using duckduckg
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>drwxr-xr-x  473 butch  staff  15136 May 21 22:07 <span class="ansi-blue-fg">bears/black</span>
 -rw-r--r--    1 butch  staff  34854 May 21 21:56 bears/black.txt
--rw-r--r--    1 butch  staff  26720 May 22 00:32 bears/panda.txt
 drwxr-xr-x  471 butch  staff  15072 May 21 22:02 <span class="ansi-blue-fg">bears/teddy</span>
 -rw-r--r--    1 butch  staff  34706 May 21 21:55 bears/teddy.txt
 </pre>
