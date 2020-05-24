@@ -32,5 +32,4 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install chromium-chromedriver
-        sudo cp /usr/lib/chromium-browser/chromedriver /usr/bin 
         nbdev_test_nbs
