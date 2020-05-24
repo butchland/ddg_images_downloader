@@ -30,4 +30,7 @@ jobs:
         if [ -n "$(nbdev_diff_nbs)" ]; then echo -e "!!! Detected difference between the notebooks and the library"; false; fi
     - name: Run tests
       run: |
+        apt-get update
+        apt-get install chromium-chromedriver
+        cp /usr/lib/chromium-browser/chromedriver /usr/bin 
         nbdev_test_nbs
