@@ -44,8 +44,15 @@ download_search_urls(path, bear_types,'{0} bear',scroll_count=4,sleep=5)
 ```
 
 ```python
-path.ls()
+!ls -ald {path.as_posix()}/*
 ```
+
+    drwxr-xr-x  473 butch  staff  15136 May 21 22:07 [34mbears/black[m[m
+    -rw-r--r--    1 butch  staff  34854 May 21 21:56 bears/black.txt
+    -rw-r--r--    1 butch  staff  26720 May 22 00:32 bears/panda.txt
+    drwxr-xr-x  471 butch  staff  15072 May 21 22:02 [34mbears/teddy[m[m
+    -rw-r--r--    1 butch  staff  34706 May 21 21:55 bears/teddy.txt
+
 
 ### Download list of urls from a text file named after the search term
 ```download_search_images_slowly(path,search_terms)
