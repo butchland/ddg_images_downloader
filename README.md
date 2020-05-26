@@ -68,3 +68,64 @@ download_search_urls(path, bear_types,'{0} bear',scroll_count=4,sleep=5)
 # slow
 download_search_images_slowly(path,bear_types)
 ```
+
+### Search and Download  single search terms
+
+Aside from retrieving urls from multiple search terms, you can also search for
+a single search term and save the retrieved urls to a file.
+
+#### An example
+
+Retrieve image urls into a file
+
+```python
+!mkdir fruits
+download_search_url('passion fruit',Path('fruits')/'passion.txt',scroll_count=3)
+```
+
+    passion fruit 357
+
+
+Download the images into a folder
+
+```python
+download_images_slowly(Path('fruits')/'passion',Path('fruits')/'passion.txt')
+```
+
+    downloaded:  0  dest:  fruits/passion
+    downloaded:  10  dest:  fruits/passion
+    downloaded:  20  dest:  fruits/passion
+    downloaded:  30  dest:  fruits/passion
+    downloaded:  40  dest:  fruits/passion
+    downloaded:  50  dest:  fruits/passion
+    downloaded:  60  dest:  fruits/passion
+    downloaded:  70  dest:  fruits/passion
+    downloaded:  80  dest:  fruits/passion
+    downloaded:  90  dest:  fruits/passion
+    downloaded:  100  dest:  fruits/passion
+    downloaded:  110  dest:  fruits/passion
+    downloaded:  120  dest:  fruits/passion
+    downloaded:  130  dest:  fruits/passion
+    downloaded:  140  dest:  fruits/passion
+    downloaded:  150  dest:  fruits/passion
+    downloaded:  160  dest:  fruits/passion
+    downloaded:  170  dest:  fruits/passion
+    downloaded:  180  dest:  fruits/passion
+    downloaded:  190  dest:  fruits/passion
+    downloaded:  200  dest:  fruits/passion
+    downloaded:  210  dest:  fruits/passion
+    downloaded:  220  dest:  fruits/passion
+    downloaded:  230  dest:  fruits/passion
+    downloaded:  240  dest:  fruits/passion
+    downloaded:  250  dest:  fruits/passion
+    downloaded:  260  dest:  fruits/passion
+    downloaded:  270  dest:  fruits/passion
+    downloaded:  280  dest:  fruits/passion
+    downloaded:  290  dest:  fruits/passion
+    downloaded:  300  dest:  fruits/passion
+    downloaded:  310  dest:  fruits/passion
+    downloaded:  320  dest:  fruits/passion
+    downloaded:  330  dest:  fruits/passion
+    downloaded:  340  dest:  fruits/passion
+    downloaded:  350  dest:  fruits/passion
+

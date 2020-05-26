@@ -183,7 +183,7 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>465728</pre>
+<pre>447992</pre>
 </div>
 
 </div>
@@ -253,7 +253,7 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>376</pre>
+<pre>360</pre>
 </div>
 
 </div>
@@ -304,7 +304,7 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>376</pre>
+<pre>360</pre>
 </div>
 
 </div>
@@ -337,9 +337,9 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(&#39;https://tse1.mm.bing.net/th?id=OIP.Mjd00HrSTlk7nWWCCiAU6wHaEx&amp;pid=Api&amp;f=1&#39;,
- &#39;https://tse2.mm.bing.net/th?id=OIP.Y2g2YJqtmQz1Q9CsvgVGXAHaHJ&amp;pid=Api&amp;f=1&#39;,
- &#39;https://tse3.mm.bing.net/th?id=OIP.BAto6DRbdswy9SkluCsnegHaLH&amp;pid=Api&amp;f=1&#39;)</pre>
+<pre>(&#39;https://tse2.mm.bing.net/th?id=OIP.4YWVYV1iBpvbCwOMxsNyqgHaEH&amp;pid=Api&amp;f=1&#39;,
+ &#39;https://tse4.mm.bing.net/th?id=OIP.LHlK2-yrT-LA7GTLZZwJswHaI1&amp;pid=Api&amp;f=1&#39;,
+ &#39;https://tse4.mm.bing.net/th?id=OIP.zDdL0omsRNWyr3-rZBSgtQHaLH&amp;pid=Api&amp;f=1&#39;)</pre>
 </div>
 
 </div>
@@ -394,7 +394,7 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_image_urls" class="doc_header"><code>get_image_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L75" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_image_urls</code>(<strong><code>search_string</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x107bd7610&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="get_image_urls" class="doc_header"><code>get_image_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_image_urls</code>(<strong><code>search_string</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x107888ed0&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>get image urls with <code>search_string</code> and scroll down <code>scroll_count</code> times with a delay of <code>sleep</code> seconds returns a list of urls</p>
 
@@ -469,7 +469,39 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="download_search_urls" class="doc_header"><code>download_search_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L89" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_urls</code>(<strong><code>path</code></strong>, <strong><code>search_terms</code></strong>, <strong><code>search_pattern</code></strong>, <strong><code>file_pattern</code></strong>=<em><code>'{0}.txt'</code></em>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x107bd7610&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="download_search_url" class="doc_header"><code>download_search_url</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L90" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_url</code>(<strong><code>search_item</code></strong>, <strong><code>file_path</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x107888ed0&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
+</blockquote>
+<p>download image url search results for a search item <code>search_item</code> into a file <code>file_path</code></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="download_search_urls" class="doc_header"><code>download_search_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L98" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_urls</code>(<strong><code>path</code></strong>, <strong><code>search_terms</code></strong>, <strong><code>search_pattern</code></strong>, <strong><code>file_pattern</code></strong>=<em><code>'{0}.txt'</code></em>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x107888ed0&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>download search results into a file in named after search string</p>
 
@@ -534,7 +566,7 @@ description: "Provides an image downloader using duckduckgo image search."
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>panda bear 344
+<pre>panda bear 346
 </pre>
 </div>
 </div>
@@ -567,7 +599,7 @@ description: "Provides an image downloader using duckduckgo image search."
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(#5) [Path(&#39;bears/black.txt&#39;),Path(&#39;bears/panda.txt&#39;),Path(&#39;bears/teddy.txt&#39;),Path(&#39;bears/black&#39;),Path(&#39;bears/teddy&#39;)]</pre>
+<pre>(#1) [Path(&#39;bears/panda.txt&#39;)]</pre>
 </div>
 
 </div>
@@ -630,7 +662,7 @@ but allow it to pause the query with a configurable delay between image requests
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="download_images_slowly" class="doc_header"><code>download_images_slowly</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_images_slowly</code>(<strong><code>dest</code></strong>, <strong><code>url_file</code></strong>=<em><code>None</code></em>, <strong><code>urls</code></strong>=<em><code>None</code></em>, <strong><code>max_pics</code></strong>=<em><code>1000</code></em>, <strong><code>delay</code></strong>=<em><code>3</code></em>, <strong><code>batch_size</code></strong>=<em><code>10</code></em>, <strong><code>timeout</code></strong>=<em><code>4</code></em>)</p>
+<h4 id="download_images_slowly" class="doc_header"><code>download_images_slowly</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L118" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_images_slowly</code>(<strong><code>dest</code></strong>, <strong><code>url_file</code></strong>=<em><code>None</code></em>, <strong><code>urls</code></strong>=<em><code>None</code></em>, <strong><code>max_pics</code></strong>=<em><code>1000</code></em>, <strong><code>delay</code></strong>=<em><code>3</code></em>, <strong><code>batch_size</code></strong>=<em><code>10</code></em>, <strong><code>timeout</code></strong>=<em><code>4</code></em>)</p>
 </blockquote>
 <p>Download images listed in text file <code>url_file</code> to path <code>dest</code>, at most <code>max_pics</code> with a delay of <code>delay</code> secs for every batch of <code>batch_size</code> images with only 1 thread</p>
 
@@ -662,7 +694,7 @@ but allow it to pause the query with a configurable delay between image requests
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="download_search_images_slowly" class="doc_header"><code>download_search_images_slowly</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L124" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_images_slowly</code>(<strong><code>path</code></strong>, <strong><code>search_terms</code></strong>, <strong><code>file_pattern</code></strong>=<em><code>'{0}.txt'</code></em>, <strong><code>max_pics</code></strong>=<em><code>1000</code></em>, <strong><code>delay</code></strong>=<em><code>3</code></em>, <strong><code>batch_size</code></strong>=<em><code>10</code></em>, <strong><code>timeout</code></strong>=<em><code>4</code></em>)</p>
+<h4 id="download_search_images_slowly" class="doc_header"><code>download_search_images_slowly</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L131" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_images_slowly</code>(<strong><code>path</code></strong>, <strong><code>search_terms</code></strong>, <strong><code>file_pattern</code></strong>=<em><code>'{0}.txt'</code></em>, <strong><code>max_pics</code></strong>=<em><code>1000</code></em>, <strong><code>delay</code></strong>=<em><code>3</code></em>, <strong><code>batch_size</code></strong>=<em><code>10</code></em>, <strong><code>timeout</code></strong>=<em><code>4</code></em>)</p>
 </blockquote>
 <p>Download images listed in text file for each item in <code>search_terms</code>  to path <code>dest</code>/item, at most <code>max_pics</code> with a delay of <code>delay</code> secs for every batch of <code>batch_size</code> images with only 1 thread</p>
 
@@ -688,6 +720,54 @@ but allow it to pause the query with a configurable delay between image requests
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>downloaded:  0  dest:  bears/panda
+downloaded:  10  dest:  bears/panda
+downloaded:  20  dest:  bears/panda
+downloaded:  30  dest:  bears/panda
+downloaded:  40  dest:  bears/panda
+downloaded:  50  dest:  bears/panda
+downloaded:  60  dest:  bears/panda
+downloaded:  70  dest:  bears/panda
+downloaded:  80  dest:  bears/panda
+downloaded:  90  dest:  bears/panda
+downloaded:  100  dest:  bears/panda
+downloaded:  110  dest:  bears/panda
+downloaded:  120  dest:  bears/panda
+downloaded:  130  dest:  bears/panda
+downloaded:  140  dest:  bears/panda
+downloaded:  150  dest:  bears/panda
+downloaded:  160  dest:  bears/panda
+downloaded:  170  dest:  bears/panda
+downloaded:  180  dest:  bears/panda
+downloaded:  190  dest:  bears/panda
+downloaded:  200  dest:  bears/panda
+downloaded:  210  dest:  bears/panda
+downloaded:  220  dest:  bears/panda
+downloaded:  230  dest:  bears/panda
+downloaded:  240  dest:  bears/panda
+downloaded:  250  dest:  bears/panda
+downloaded:  260  dest:  bears/panda
+downloaded:  270  dest:  bears/panda
+downloaded:  280  dest:  bears/panda
+downloaded:  290  dest:  bears/panda
+downloaded:  300  dest:  bears/panda
+downloaded:  310  dest:  bears/panda
+downloaded:  320  dest:  bears/panda
+downloaded:  330  dest:  bears/panda
+downloaded:  340  dest:  bears/panda
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -728,21 +808,6 @@ but allow it to pause the query with a configurable delay between image requests
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Converted 00_images.ipynb.
-Converted index.ipynb.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 

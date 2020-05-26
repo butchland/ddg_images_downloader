@@ -203,6 +203,132 @@ be downloaded into a separate folder</p>
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Search-and-Download--single-search-terms">Search and Download  single search terms<a class="anchor-link" href="#Search-and-Download--single-search-terms"> </a></h3><p>Aside from retrieving urls from multiple search terms, you can also search for
+a single search term and save the retrieved urls to a file.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="An-example">An example<a class="anchor-link" href="#An-example"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Retrieve image urls into a file</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>mkdir fruits
+<span class="n">download_search_url</span><span class="p">(</span><span class="s1">&#39;passion fruit&#39;</span><span class="p">,</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;fruits&#39;</span><span class="p">)</span><span class="o">/</span><span class="s1">&#39;passion.txt&#39;</span><span class="p">,</span><span class="n">scroll_count</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>passion fruit 357
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Download the images into a folder</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">download_images_slowly</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;fruits&#39;</span><span class="p">)</span><span class="o">/</span><span class="s1">&#39;passion&#39;</span><span class="p">,</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;fruits&#39;</span><span class="p">)</span><span class="o">/</span><span class="s1">&#39;passion.txt&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>downloaded:  0  dest:  fruits/passion
+downloaded:  10  dest:  fruits/passion
+downloaded:  20  dest:  fruits/passion
+downloaded:  30  dest:  fruits/passion
+downloaded:  40  dest:  fruits/passion
+downloaded:  50  dest:  fruits/passion
+downloaded:  60  dest:  fruits/passion
+downloaded:  70  dest:  fruits/passion
+downloaded:  80  dest:  fruits/passion
+downloaded:  90  dest:  fruits/passion
+downloaded:  100  dest:  fruits/passion
+downloaded:  110  dest:  fruits/passion
+downloaded:  120  dest:  fruits/passion
+downloaded:  130  dest:  fruits/passion
+downloaded:  140  dest:  fruits/passion
+downloaded:  150  dest:  fruits/passion
+downloaded:  160  dest:  fruits/passion
+downloaded:  170  dest:  fruits/passion
+downloaded:  180  dest:  fruits/passion
+downloaded:  190  dest:  fruits/passion
+downloaded:  200  dest:  fruits/passion
+downloaded:  210  dest:  fruits/passion
+downloaded:  220  dest:  fruits/passion
+downloaded:  230  dest:  fruits/passion
+downloaded:  240  dest:  fruits/passion
+downloaded:  250  dest:  fruits/passion
+downloaded:  260  dest:  fruits/passion
+downloaded:  270  dest:  fruits/passion
+downloaded:  280  dest:  fruits/passion
+downloaded:  290  dest:  fruits/passion
+downloaded:  300  dest:  fruits/passion
+downloaded:  310  dest:  fruits/passion
+downloaded:  320  dest:  fruits/passion
+downloaded:  330  dest:  fruits/passion
+downloaded:  340  dest:  fruits/passion
+downloaded:  350  dest:  fruits/passion
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
