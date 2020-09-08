@@ -22,7 +22,7 @@
 
 **Import library**
 
-```python
+```
 from pathlib import Path
 from fastcore.utils import *
 from ddg_images_downloader.images import *
@@ -37,18 +37,18 @@ download_search_urls(path, search_terms, search_pattern, **kwargs)
 
 #### An example
 
-```python
+```
 bear_types = ['teddy','black']
 path = Path('bears')
 ```
 
-```python
+```
 # slow
 !rm -rf bears
 download_search_urls(path, bear_types,'{0} bear',scroll_count=4,sleep=5)
 ```
 
-```python
+```
 !ls -ald {path.as_posix()}/*
 ```
 
@@ -64,7 +64,7 @@ download_search_urls(path, bear_types,'{0} bear',scroll_count=4,sleep=5)
 > Each text file named after the search term containing the list of urls will
 > be downloaded into a separate folder
 
-```python
+```
 # slow
 download_search_images_slowly(path,bear_types)
 ```
@@ -78,7 +78,7 @@ a single search term and save the retrieved urls to a file.
 
 Retrieve image urls into a file
 
-```python
+```
 !mkdir fruits
 download_search_url('passion fruit',Path('fruits')/'passion.txt',scroll_count=3)
 ```
@@ -88,7 +88,7 @@ download_search_url('passion fruit',Path('fruits')/'passion.txt',scroll_count=3)
 
 Download the images into a folder
 
-```python
+```
 download_images_slowly(Path('fruits')/'passion',Path('fruits')/'passion.txt')
 ```
 
