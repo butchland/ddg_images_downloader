@@ -84,7 +84,6 @@ def get_image_urls(search_string,options=chrome_options,scroll_count=20,sleep=3)
 
 # Internal Cell
 from pathlib import Path
-# from fastcore.utils import *
 
 # Cell
 def download_search_url(search_item, file_path, options=chrome_options, scroll_count=20, sleep=3):
@@ -105,7 +104,7 @@ def download_search_urls(path,search_terms, search_pattern, file_pattern='{0}.tx
 
 # Internal Cell
 # externalized version of fastai2 internal method _download_image (copied exactly)
-# see https://github.com/fastai/fastai2/blob/f9231256e2a8372949123bda36e44cb0e1493aa2/fastai2/vision/utils.py#L11
+# see https://github.com/fastai/fastai/blob/22e12389fc10b740f71480d75a90e724fe311d87/fastai/vision/utils.py#L11
 from fastai.data.external import download_url
 def download_image_inner(dest, inp, timeout=4):
     i,url = inp
