@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: 'Duckduckgo Image Downloader '
-      url: /images
+      url: images.html
     output: web
     title: ddg_images_downloader
   output: web

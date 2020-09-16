@@ -2,6 +2,7 @@
 
 title: Duckduckgo Image Downloader 
 
+
 keywords: fastai
 sidebar: home_sidebar
 
@@ -407,7 +408,7 @@ nb_path: "00_images.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_image_urls" class="doc_header"><code>get_image_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_image_urls</code>(<strong><code>search_string</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x119608f50&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="get_image_urls" class="doc_header"><code>get_image_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_image_urls</code>(<strong><code>search_string</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x110d91c50&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>get image urls with <code>search_string</code> and scroll down <code>scroll_count</code> times with a delay of <code>sleep</code> seconds returns a list of urls</p>
 
@@ -482,7 +483,7 @@ nb_path: "00_images.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="download_search_url" class="doc_header"><code>download_search_url</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L89" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_url</code>(<strong><code>search_item</code></strong>, <strong><code>file_path</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x119608f50&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="download_search_url" class="doc_header"><code>download_search_url</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L89" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_url</code>(<strong><code>search_item</code></strong>, <strong><code>file_path</code></strong>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x110d91c50&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>download image url search results for a search item <code>search_item</code> into a file <code>file_path</code></p>
 
@@ -514,7 +515,7 @@ nb_path: "00_images.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="download_search_urls" class="doc_header"><code>download_search_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L97" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_urls</code>(<strong><code>path</code></strong>, <strong><code>search_terms</code></strong>, <strong><code>search_pattern</code></strong>, <strong><code>file_pattern</code></strong>=<em><code>'{0}.txt'</code></em>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x119608f50&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="download_search_urls" class="doc_header"><code>download_search_urls</code><a href="https://github.com/butchland/ddg_images_downloader/tree/master/ddg_images_downloader/images.py#L97" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>download_search_urls</code>(<strong><code>path</code></strong>, <strong><code>search_terms</code></strong>, <strong><code>search_pattern</code></strong>, <strong><code>file_pattern</code></strong>=<em><code>'{0}.txt'</code></em>, <strong><code>options</code></strong>=<em><code>&lt;selenium.webdriver.chrome.options.Options object at 0x110d91c50&gt;</code></em>, <strong><code>scroll_count</code></strong>=<em><code>20</code></em>, <strong><code>sleep</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>download search results into a file in named after search string</p>
 
